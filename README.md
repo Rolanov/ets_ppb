@@ -8,9 +8,11 @@ Kelas : PPB D
 
 
 Tampilan Books page:
+<br>
 ![book_page.png](images/book_page.png)
 <br>
 Implementasi Create dan Edit Book: 
+<br>
 ![create_book.png](images/create_book.png)
 <br>
 poin-poin penerapan:
@@ -20,7 +22,7 @@ poin-poin penerapan:
 - Stateful widget: Halaman Buku, Detail Buku, Edit Buku
 - Stateless Widget: Formulir pembuatan buku, Kartu Buku
 <br>
-Error handling:
+Error handling: <br>
 ```
   Future refreshBooks() async {
     setState(() => isLoading = true);
