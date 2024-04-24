@@ -1,16 +1,39 @@
 # ets_ppb
 
-A new Flutter project.
+Nama : Muhammad Rolanov Wowor
+NRP : 5025201017
+Kelas : PPB D
 
-## Getting Started
+## Implementasi Aplikasi
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Tampilan Books page:
+![book_page.png](book_page.png)
+<br>
+Implementasi Create dan Edit Book: 
+![create_book.png](create_book.png)
+<br>
+poin-poin penerapan:
+- Columns
+- Row
+- Detail Buku, Kartu Buku (tampilan di home Page)
+- Stateful widget: Halaman Buku, Detail Buku, Edit Buku
+- Stateless Widget: Formulir pembuatan buku, Kartu Buku
+<br>
+Error handling:
+```
+  Future refreshBooks() async {
+    setState(() => isLoading = true);
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    try {
+      books = await BooksDatabase.instance.readAllBooks();
+    } catch (e) {
+      // Handle the error, e.g., show a snackbar or display an error message
+      print('Error loading books: $e');
+      // Optionally, you can rethrow the error to propagate it further
+      // throw e;
+    }
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    setState(() => isLoading = false);
+    }
+```
