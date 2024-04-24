@@ -8,10 +8,10 @@ Kelas : PPB D
 
 
 Tampilan Books page:
-![book_page.png](book_page.png)
+![book_page.png](images/book_page.png)
 <br>
 Implementasi Create dan Edit Book: 
-![create_book.png](create_book.png)
+![create_book.png](images/create_book.png)
 <br>
 poin-poin penerapan:
 - Columns
